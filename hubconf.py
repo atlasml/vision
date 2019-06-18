@@ -30,7 +30,7 @@ def benchmark():
     ])
 
     imagenet.benchmark(
-        model=resnext101_32x8d(retrained=True),
+        model=resnext101_32x8d(pretrained=True),
         paper_model_name='ResNext-101',
         paper_arxiv_id='1611.05431',
         paper_pwc_id='aggregated-residual-transformations-for-deep',
