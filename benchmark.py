@@ -3,11 +3,9 @@ dependencies = ['torch', 'scipy', 'torchvision']
 from sotabench.image_classification import imagenet
 from torchvision.models.resnet import resnext101_32x8d
 import torchvision.transforms as transforms
-
 import PIL
 
 def benchmark():
-
     normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     input_transform = transforms.Compose([
         transforms.Resize(256, PIL.Image.BICUBIC),
