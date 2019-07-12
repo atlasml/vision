@@ -1,5 +1,3 @@
-dependencies = ['torch', 'scipy', 'torchvision']
-
 from sotabench.image_classification import ImageNet
 from torchvision.models.resnet import resnext101_32x8d
 import torchvision.transforms as transforms
