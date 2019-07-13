@@ -15,8 +15,7 @@ input_transform = transforms.Compose([
 ImageNet.benchmark(
     model=resnext101_32x8d(pretrained=True),
     paper_model_name='ResNeXt-101 32x48d',
-    paper_arxiv_id='1611.05431',
-    paper_pwc_id='aggregated-residual-transformations-for-deep',
+    paper_arxiv_id='1805.00932',
     input_transform=input_transform,
     batch_size=256,
     num_gpu=1
